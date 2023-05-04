@@ -8,7 +8,7 @@ dataset about mobile phone specification & prices is used from https://www.kaggl
 
 ## Min:
 
-- Git Version Control & Github
+- Git Version Control & Github ✅
 - leeres Projekt zum Stand der Projektvorlage(next-starter) bringen, aber projektspezifisch anpassen
 - ein möglichst frühes Deploy in Vercel
 
