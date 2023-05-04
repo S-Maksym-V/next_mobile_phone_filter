@@ -4,8 +4,6 @@ dataset about mobile phone specification & prices is used from https://www.kaggl
 
 ## Ziele & Anforderungen:
 
----
-
 ## Min:
 
 - Git Version Control & Github
