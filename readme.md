@@ -7,8 +7,8 @@ dataset about mobile phone specification & prices is used from https://www.kaggl
 ## Min:
 
 - Git Version Control & Github ✅
-- leeres Projekt zum Stand der Projektvorlage(next-starter) bringen, aber projektspezifisch anpassen
-- ein möglichst frühes Deploy in Vercel
+- leeres Projekt zum Stand der Projektvorlage(next-starter) bringen, aber projektspezifisch anpassen ✅
+- ein möglichst frühes Deploy in Vercel✅
 
 - ### Supabase:
 
@@ -37,11 +37,19 @@ dataset about mobile phone specification & prices is used from https://www.kaggl
   - Generierte Seite für je Produkt
 
 - ### **Fixes**:
-  - platzhalter
+  - bis jetzt keine Bugs
 
 ---
 
 ## Optional:
+
+- Benutzen ZOD für Prüfung der Eingangsdaten:
+
+  - von supabase oder,
+  - falls hinzugefügt wird, vom Eingabeform
+
+- Google-Font importieren (S. Haupt-layout in next-starter)
+- themeColor für dark/light mode in metadata in Haupt-layout
 
 - Supabase:
 
