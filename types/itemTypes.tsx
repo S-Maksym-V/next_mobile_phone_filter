@@ -1,4 +1,5 @@
 export type MPhoneTile = {
+	phone_id: number;
 	model: string;
 	brand: string;
 	operating_system: string;

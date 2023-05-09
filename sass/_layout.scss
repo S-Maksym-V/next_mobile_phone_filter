@@ -62,3 +62,10 @@ body {
 		}
 	}
 }
+
+.single-page {
+	margin: 0 3rem;
+	&__brand {
+		color: var(--imperial-red);
+	}
+}
