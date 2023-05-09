@@ -14,9 +14,9 @@ export default function ItemTile({
 	price_INR,
 }: Props) {
 	return (
-		<Link href={`/${phone_id}`}>
+		<Link href={`/${phone_id}`} style={{ textDecoration: 'none' }}>
 			<article className="tile">
-				<strong> {model} </strong>
+				<strong className="tile__model"> {model} </strong>
 				<p> {brand} </p>
 				<dl className="tile__spec">
 					<dt> Betriebssystem: </dt>
