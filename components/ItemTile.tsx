@@ -22,9 +22,10 @@ export default function ItemTile({
 					<dt> Betriebssystem: </dt>
 					<dd> {operating_system} </dd>
 					<dt> Auflösung: </dt>
-					<dt> {`${resolution_x} x ${resolution_y}`} </dt>
+					<dd> {`${resolution_x} x ${resolution_y}`} </dd>
 				</dl>
-				<p> {getFormattedPriceInrToEur(price_INR)} </p>
+				{/* ursprüngliche Preisangaben aus Dataset sind in indischen Rupien, durch getFormatted...-Funktion in EUR übersetzt  */}
+				<strong> {getFormattedPriceInrToEur(price_INR)} </strong>
 			</article>
 		</Link>
 	);

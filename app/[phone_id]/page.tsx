@@ -51,8 +51,8 @@ export default async function page({ params: { phone_id } }: Props) {
 				<dd> {data?.number_of_SIMs} </dd>
 			</dl>
 			<strong>
-				{' '}
-				Price: {getFormattedPriceInrToEur(data?.price_INR ?? 0)}{' '}
+				{/* ursprüngliche Preisangaben aus Dataset sind in indischen Rupien, durch getFormatted...-Funktion in EUR übersetzt  */}
+				Price: {getFormattedPriceInrToEur(data?.price_INR ?? 0)}
 			</strong>
 		</div>
 	);

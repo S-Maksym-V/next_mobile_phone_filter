@@ -1,6 +1,9 @@
 'use client';
 
 const brands = [
+	'10.or',
+	'Acer',
+	'Alcatel',
 	'Apple',
 	'Samsung',
 	'LG',
@@ -25,13 +28,13 @@ export default function BrandFilter({
 }: Props) {
 	return (
 		<div>
-			<div>
-				<label htmlFor="brands">Hersteller:</label>
-			</div>
+			<label htmlFor="brands" className="sidebar-page__sidebar__label">
+				Hersteller:
+			</label>
 			<select
 				name="brands"
 				id="brands"
-				// value={brandSelection}
+				value={brandSelection}
 				onChange={(e) => setBrandSelection(e.target.value)}
 			>
 				<option value=""> --Alle-- </option>

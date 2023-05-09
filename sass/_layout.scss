@@ -52,6 +52,7 @@ body {
 	&__sidebar {
 		justify-content: center;
 		display: flex;
+		flex-direction: column;
 		@media ($sidebar-aside) {
 			margin-top: var(--size-fluid-1);
 			align-self: flex-start;
@@ -59,6 +60,19 @@ body {
 		}
 		@media ($sidebar-below) {
 			border-block-start: 2px solid currentColor;
+		}
+
+		&__modifier {
+			margin: 1rem 1rem;
+			&__name {
+				display: block;
+				text-align: center;
+			}
+		}
+
+		&__label {
+			display: block;
+			margin-top: 0.5rem;
 		}
 	}
 }
