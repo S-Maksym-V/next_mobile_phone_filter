@@ -5,7 +5,7 @@
    	 animation-name: rotate;
    	 animation-timing-function: linear;
    	 animation-iteration-count: infinite;
-   	 animation-duration: 300s;
+   	 animation-duration: 120s;
    	 transform-origin: center;
    	 }
    	 @media (prefers-color-scheme: dark) {
