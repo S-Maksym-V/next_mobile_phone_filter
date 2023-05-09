@@ -3,7 +3,9 @@ Wenn man größere Mengen spezifischer Styles hat, kann man
 auch in einzelnen page- bzw. Komponenten-Dateien css oder
 scss-Dateien importieren.
 */
+import Header from '@/components/Header';
 import '../sass/style.scss';
+import Footer from '@/components/Footer';
 // import SupabaseProvider from './supabase-provider';
 
 // https://beta.nextjs.org/docs/api-reference/metadata
@@ -30,7 +32,13 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body>{children}</body>
+			<body>
+				<div className="site-wrapper">
+					<Header />
+					<div className="site-content">{children}</div>
+					<Footer />
+				</div>
+			</body>
 		</html>
 	);
 }

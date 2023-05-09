@@ -19,17 +19,16 @@ dataset about mobile phone specification & prices is used from https://www.kaggl
 - ### Frontend:
 
   - **Kommunikation mit supabase**
-    - api mit middleware
-  -
-  - Header, Footer
-  - Main-Bereich teilt sich auf Filter-Spalte rechts und Übersicht-Spalte links
+
+  - Header, Footer ✅
+  - Main-Bereich teilt sich auf Filter-Spalte rechts und Übersicht-Spalte links ✅
   -
   - Filter sollte im allgemein multiplies choice und/oder combobox und/oder aufklappende Menü mit Checkboxen / Radio-Buttons haben.
   - Filter-Menüs:
     - _Platzhalter_
     - _usw_.
   -
-  - Produktionsübersicht besteht aus Kacheln
+  - Produktionsübersicht besteht aus Kacheln ✅
   - Je Kachel:
     - Model-Name, ausgewählte Eigenschaften
     - Platzhalter-Bild im Hintergrund
