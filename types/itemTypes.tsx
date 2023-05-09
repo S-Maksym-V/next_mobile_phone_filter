@@ -33,3 +33,5 @@ export type PhoneData = {
 	touchscreen: string | null;
 	'wi-fi': string | null;
 };
+
+export type SortOptions = 'name' | 'brand' | 'price_INR' | 'phone_id';

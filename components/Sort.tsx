@@ -1,8 +1,9 @@
+import { ChangeEvent } from 'react';
+import type { SortOptions } from '@/types/itemTypes';
+
 type Props = {
-	sortOption: 'name' | 'brand' | 'price_INR' | 'phone_id';
-	setSortOption: React.Dispatch<
-		React.SetStateAction<'name' | 'brand' | 'price_INR' | 'phone_id'>
-	>;
+	sortOption: SortOptions;
+	setSortOption: React.Dispatch<React.SetStateAction<SortOptions>>;
 	sortOrder: boolean;
 	setSortOrder: React.Dispatch<React.SetStateAction<boolean>>;
 };
@@ -13,7 +14,14 @@ export default function Sort({
 	sortOrder,
 	setSortOrder,
 }: Props) {
-	console.log(sortOrder);
+	// console.log(sortOrder);
+
+	function onChangeDropdown(e: ChangeEvent<HTMLSelectElement>) {
+		if (e.target.value !== ('name' || 'brand' || 'price_INR' || 'phone_id'))
+			return;
+
+		setSortOption(e.target.value);
+	}
 
 	return (
 		<div>
@@ -24,7 +32,7 @@ export default function Sort({
 				name="brands"
 				id="brands"
 				value={sortOption}
-				onChange={(e) => setSortOption(e.target.value)}
+				onChange={onChangeDropdown}
 			>
 				<option value="phone_id"> --kein-- </option>
 				<option value="name"> Name </option>

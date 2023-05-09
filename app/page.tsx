@@ -8,12 +8,12 @@ import { supabase } from '@/lib/supabaseClient';
 import type { PhoneData } from '@/types/itemTypes';
 import { useEffect, useState } from 'react';
 
+import type { SortOptions } from '@/types/itemTypes';
+
 export default function Home() {
 	const [brandSelection, setBrandSelection] = useState<string>('');
 	const [phoneData, setPhoneData] = useState<PhoneData[] | null>([]);
-	const [sortOption, setSortOption] = useState<
-		'name' | 'brand' | 'price_INR' | 'phone_id'
-	>('phone_id');
+	const [sortOption, setSortOption] = useState<SortOptions>('phone_id');
 	const [sortOrder, , setSortOrder] = useToggle(true);
 
 	useEffect(() => {
